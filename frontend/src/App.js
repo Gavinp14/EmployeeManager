@@ -1,4 +1,5 @@
 import "./App.css";
+import ControlPanel from "./components/ControlPanel";
 import EmployeeList from "./components/EmployeeList";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,6 +27,8 @@ const employees = [
 function App() {
   return (
     <>
+      <h1 className="text-center mt-5">Employee Management System</h1>
+      <ControlPanel />
       <EmployeeList employees={employees} />
     </>
   );

@@ -5,7 +5,6 @@ import "./employeelist.css";
 function EmployeeList({ employees }) {
   return (
     <Container>
-      <h1 className="text-center">Employee Management System</h1>
       <Table bordered className="table table-striped employee-table">
         <thead>
           <tr>
