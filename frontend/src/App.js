@@ -1,6 +1,6 @@
 import "./App.css";
 import ControlPanel from "./components/ControlPanel/ControlPanel";
-import EmployeeList from "./components/EmployeeList";
+import EmployeeList from "./components/EmployeeList/EmployeeList";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const employees = [
