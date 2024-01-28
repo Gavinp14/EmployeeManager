@@ -1,5 +1,5 @@
 import "./App.css";
-import ControlPanel from "./components/ControlPanel";
+import ControlPanel from "./components/ControlPanel/ControlPanel";
 import EmployeeList from "./components/EmployeeList";
 import "bootstrap/dist/css/bootstrap.min.css";
 

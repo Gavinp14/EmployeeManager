@@ -1,6 +1,6 @@
 import React from "react";
 import "./controlpanel.css";
-import AddEmployee from "./AddEmployee";
+import AddEmployee from "../AddEmployee/AddEmployee";
 import { Container, Button } from "react-bootstrap";
 
 export default function ControlPanel() {
