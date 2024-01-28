@@ -6,7 +6,7 @@ function EmployeeList({ employees }) {
   return (
     <Container>
       <h1 className="text-center">Employee Management System</h1>
-      <Table striped bordered hover className="employee-table">
+      <Table bordered className="table table-striped employee-table">
         <thead>
           <tr>
             <th>Badge Number</th>
