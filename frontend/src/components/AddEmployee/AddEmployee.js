@@ -52,6 +52,7 @@ export default function AddEmployee() {
       salary: salary && salary.trim(),
     };
 
+    //fix the bug where it throws an error when fetching api data
     await fetch("http://127.0.0.1:5000/api/employees", {
       method: "POST",
       headers: {

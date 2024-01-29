@@ -43,6 +43,17 @@ function EmployeeList() {
               <td>{employee.department}</td>
               <td>{employee.position}</td>
               <td>{employee.salary}</td>
+              <td className="text-right button-section">
+                <Button
+                  onClick={null}
+                  className="btn btn-warning update-button"
+                >
+                  Update
+                </Button>
+                <Button onClick={null} className="btn btn-danger delete-button">
+                  Delete
+                </Button>
+              </td>
             </tr>
           ))}
         </tbody>
