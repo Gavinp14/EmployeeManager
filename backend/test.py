@@ -2,13 +2,12 @@ import requests
 
 url = 'http://localhost:5000/api/employees'
 data = {
-    "id": 1,
-    "badgeNumber": 12345,
-    "firstName": "John",
-    "lastName": "Doe",
-    "department": "IT",
-    "position": "Developer",
-    "salary": 50000
+    "badgeNumber": 14141,
+    "firstName": "Gavin",
+    "lastName": "Porter",
+    "department": "HR",
+    "position": "Rep",
+    "salary": 60000
 }
 
 response = requests.post(url, json=data)

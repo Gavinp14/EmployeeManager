@@ -1,8 +1,26 @@
 import React from "react";
-import { Container, Table } from "react-bootstrap";
+import { Container, Table, Button } from "react-bootstrap";
 import "./employeelist.css";
+import { useEffect, useState } from "react";
 
-function EmployeeList({ employees }) {
+function EmployeeList() {
+  const [employeeData, setEmployeeData] = useState([]);
+
+  //fetch employee data from api
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:5000/api/employees");
+        const data = await response.json();
+        setEmployeeData(data.employees);
+      } catch (error) {
+        console.error("could not fetch data", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <Container>
       <Table bordered className="table table-striped employee-table">
@@ -17,7 +35,7 @@ function EmployeeList({ employees }) {
           </tr>
         </thead>
         <tbody>
-          {employees.map((employee) => (
+          {employeeData.map((employee) => (
             <tr key={employee.id}>
               <td>{employee.badgeNumber}</td>
               <td>{employee.firstName}</td>
